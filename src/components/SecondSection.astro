@@ -1,0 +1,33 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  clarification="Reengieered"
+  title="Model 3"
+  subtitle="Lease starting at $329/mo*"
+  color="black"
+>
+<footer class="flex flex-col flex-grow justify-end pb-10" slot="footer"> 
+  <div class="gap-x-6 flex mx-auto">
+    <a
+      class="bg-white text-base rounded font-medium text-black px-16 py-2 inline-block"
+      href="#">Custom Order</a
+    >
+    <a
+      class="bg-gray-800 backdrop-blur-sm text-base rounded font-medium text-white px-16 py-2 inline-block hover:bg-black hover:text-white transition-colors"
+      href="#">Demo Drive</a
+    >
+</div>
+    <div>
+        <p class="text-black text-[13px] absolute inset-x-0 bottom-10">*Excludes taxes and fees with price subject to change. Available in select states. <a href="#" class="underline">See details</a></p>
+    </div>
+
+</footer>
+
+  <img slot="background"
+  src="../../public/model-3.jpg"
+  alt="Model 3"
+  class="object-center object-cover h-full w-full"
+/>
+</Section>

@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/LandingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ChargeSection from "../components/ChargeSection.astro";
+import Section from "../components/Section.astro";
+import FirstSection from "../components/FirstSection.astro";
+import SecondSection from "../components/SecondSection.astro";
+import ThirdSection from "../components/ThirdSection.astro";
+import FifthSection from "../components/FifthSection.astro";
+import SixthSection from "../components/SixthSection.astro";
+import SeventhSection from "../components/SeventhSection.astro";
+import EigthSection from "../components/EigthSection.astro";
+import NinthSection from "../components/NinthSection.astro";
+---
+
+<Layout title="Electric Cars, Solar & Clean Energy">
+
+  <Header />
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-m-0"
+  >
+    <div class="snap-center">
+      <HeroSection title="Experience Tesla" subtitle="Schedule a Demo Drive Today" color="white">
+        <div class="gap-x-6 flex mx-auto" slot="footer">
+          <a
+            class="bg-white text-base rounded font-medium text-black px-16 py-2 inline-block"
+            href="#">Shop Available</a>
+          <a
+            class="bg-white/5 backdrop-blur-sm text-base rounded font-medium text-white px-16 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300"
+            href="#">Demo Drive</a>
+        </div>
+        <video
+          slot="background"
+          class="object-center object-cover"
+          autoplay
+          muted
+          loop
+          src="/video.mp4">
+        </video>
+      </HeroSection>
+    </div>
+
+	<div class="snap-center">
+		<FirstSection></FirstSection>
+	</div>
+
+	<div class="snap-center">
+		<SecondSection></SecondSection>
+	</div>
+
+	<div class="snap-center">
+		<ThirdSection></ThirdSection>
+	</div>
+
+    <div class="snap-center">
+      <ChargeSection />
+    </div>
+
+	<div class="snap-center">
+		<FifthSection></FifthSection>
+	</div>
+
+    <div class="snap-center">
+      <SixthSection />
+    </div>
+
+    <div class="snap-center">
+      <SeventhSection />
+    </div>
+
+	<div class="snap-center">
+		<EigthSection />
+	</div>
+  
+	  <div class="snap-center">
+		<NinthSection />
+	</div>
+
+  </main>
+</Layout>

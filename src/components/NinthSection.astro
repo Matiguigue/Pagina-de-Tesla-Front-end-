@@ -1,0 +1,30 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Accesories"
+  color="black"
+>
+<footer class="flex flex-col flex-grow justify-end pb-10" slot="footer">
+  <div class="gap-x-6 flex mx-auto pb-2" >
+    <a
+      class="bg-white text-base rounded font-medium text-black px-16 py-2 inline-block"
+      href="#">Shop Now</a>
+    </div>
+    <div class="text-black absolute inset-x-0 bottom-0 text-sm pb-3">
+        <a href="#">Tesla © 2024</a>
+        <a href="#">Privacy & Legal</a>
+        <a href="#">Vehicle Recalls</a>
+        <a href="#">Contact</a>
+        <a href="#">News</a>
+        <a href="#">Get Updates</a>
+        <a href="#">Locations</a>
+    </div>
+</footer>
+    <img slot="background"
+    src="../../public/accesories.jpg"
+    alt="Accesories"
+    class="object-cover object-center h-full w-full"
+  />
+</Section>
